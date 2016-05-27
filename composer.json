@@ -3,6 +3,7 @@
     "type": "library",
     "description": "PHP port of travishaynes/shopify-mock",
     "license": "MIT",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Ned McConnell",

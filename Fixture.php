@@ -75,8 +75,13 @@ class Fixture {
 	 * JSON only for now.
 	 * TODO: Implement JSON parsing
 	 */
-	public static function all($path = 'fixtures')
+	public static function all($path = false)
 	{
+
+		if(!$path)
+		{
+			$path = realpath(__DIR__ .'/fixtures');
+		}
 
 		$dir = self::_scandir($path);
 

@@ -58,6 +58,10 @@ class ShopifyAPI extends BaseShopifyAPI {
 		        			$this->responses->add(
 			        			new Response('get', '/admin/'. $fixture->name .'/'. $datum->id .'.'. $ext, $f)
 			        		);
+
+			        		$this->responses->add(
+			        			new Response('get', '/admin/'. $fixture->name .'/'. $datum->id .'/metafields.'. $ext, $fixtures[$ext]['metafields'])
+			        		);
 		        		}
 
 		        	}

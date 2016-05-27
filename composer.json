@@ -1,0 +1,28 @@
+{
+    "name": "edwardmcconnell/shopify-mock-php",
+    "description": "PHP port of travishaynes/shopify-mock",
+    "authors": [
+        {
+            "name": "Ned McConnell",
+            "email": "em@edwardmcconnell.com"
+        }
+    ],
+    "require": {
+    	"rocket-code/shopify": "~2.0"
+    },
+    "require-dev": {
+    	"phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+    	"psr-4": {
+    		"ShopifyAPI\\Mock\\": "."
+    	}
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php",
+            "tests/StubFixture.php",
+            "tests/StubShopifyAPI.php"
+        ]
+    }
+}

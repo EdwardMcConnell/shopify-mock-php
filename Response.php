@@ -12,11 +12,21 @@ class Response {
 	{
 		$this->fixture = $fixture;
 		$this->method = $method;
-		$this->url = $url;
+		$this->url = $this->clean($url);
 	}
 
 	public function parseData()
 	{
 		return $this->fixture->parseData();
+	}
+
+	public function clean($url)
+	{
+		if(strpos($url, '?') !== false)
+		{
+			return substr($url, 0, strpos($url, '?'));
+		}
+
+		return $url;
 	}
 }

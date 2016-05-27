@@ -1,6 +1,8 @@
 {
     "name": "edwardmcconnell/shopify-mock-php",
+    "type": "library",
     "description": "PHP port of travishaynes/shopify-mock",
+    "license": "MIT",
     "authors": [
         {
             "name": "Ned McConnell",
